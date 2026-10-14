@@ -1,0 +1,2 @@
+a. 1 / 2000 secunde
+b. 2000 * 60 * 60 * 4 / 8 bytes pentru 1 ora de achizitie
