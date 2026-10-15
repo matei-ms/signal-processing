@@ -15,7 +15,5 @@ arr = np.fromfunction(f, shape=(128,128))
 
 axs[1].imshow(arr, cmap='viridis')
 
-fig.legend(loc='upper right')
-
 plt.savefig('lab/01/ex2_2.pdf')
 plt.show()
