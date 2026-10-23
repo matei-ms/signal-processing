@@ -48,5 +48,8 @@ axs[1].plot(t, x + gamma * z, color='dimgray')
 
 axs[1].plot(t, x, color='darkviolet')
 
+for ax in axs.flat:
+    ax.grid(True)
+
 plt.savefig('lab/02/ex2.pdf')
 plt.show()
