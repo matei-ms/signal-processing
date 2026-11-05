@@ -1,0 +1,1 @@
+# triunghi mayb gen suma sinusuri
