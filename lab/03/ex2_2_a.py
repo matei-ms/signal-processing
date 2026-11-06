@@ -64,6 +64,3 @@ def update(i):
 
 anim = anm.FuncAnimation(fig, update, frames=range(0, fs, pas), interval=1000 // fps)
 anim.save('lab/03/ex2_2_a.gif', writer='pillow', fps=fps)
-
-plt.savefig('lab/03/ex2_2.pdf')
-plt.show()
