@@ -14,6 +14,7 @@ x = np.cos(2 * np.pi * f * t)
 omegas = [1, 2, 5, 7]
 
 for ax, w in zip(axs.flat, omegas):
+    ax.set_title(rf'$\omega = {w}$', x=0.8, y=1)
     ax.set_xlabel('Real')
     ax.set_ylabel('Imaginar')
     ax.axhline(0, color='black', linewidth=1)
@@ -25,6 +26,11 @@ for ax, w in zip(axs.flat, omegas):
     z = x * math.e ** (-2j * np.pi * w * t)
     
     ax.scatter(z.real, z.imag, c=np.abs(z), cmap='managua', vmin=0, vmax=1, s=1)
+    
+    centru = np.mean(z)
+    
+    ax.plot([0, centru.real], [0, centru.imag], color='black', linewidth=2)
+    ax.plot(centru.real, centru.imag, 'ko')
 
 plt.savefig('lab/03/ex2_2.pdf')
 plt.show()
