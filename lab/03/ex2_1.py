@@ -31,5 +31,6 @@ axs[1].set_xlim([-1.1, 1.1])
 axs[1].set_ylim([-1.1, 1.1])
 axs[1].set_aspect('equal')
 
+plt.tight_layout()
 plt.savefig('lab/03/ex2_1.pdf')
 plt.show()
