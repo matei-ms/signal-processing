@@ -1,0 +1,8 @@
+Psemnal = 90dB
+SNRdB = 80dB
+
+SNRdb = 10logSNR
+SNR = Psemnal / Pzgomot
+=> SNRdb = Psemnal - Pzgomot
+
+=> Pzgomot = 10dB
